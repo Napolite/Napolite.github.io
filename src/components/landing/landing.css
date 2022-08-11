@@ -1,0 +1,126 @@
+.landing-root {
+  animation: fadeOut 3s;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  height: 250px;
+  width: 350px;
+}
+.landing-logo-text {
+  font-size: 70px;
+  font-family: satisfy;
+  letter-spacing: 8px;
+  animation: logText 0.5s;
+}
+
+.landing-logo {
+  height: 90px;
+  width: 90px;
+  transform: rotate(-10deg);
+  animation: logAnim 0.5s;
+}
+
+.no-disp {
+  opacity: 0;
+  font-size: 50px;
+  letter-spacing: 8px;
+  font-family: satisfy;
+}
+
+@keyframes logAnim {
+  0% {
+    transform: translateX(170px);
+  }
+  5% {
+    transform: translateX(170px);
+  }
+  6% {
+    transform: translateX(170px);
+  }
+  7% {
+    transform: translateX(170px);
+  }
+  10% {
+    transform: translateX(153px);
+  }
+  20% {
+    transform: translateX(136px);
+  }
+  30% {
+    transform: translateX(119px);
+  }
+
+  40% {
+    transform: rotateX(102px);
+  }
+  50% {
+    transform: translateX(85px);
+  }
+
+  60% {
+    transform: translateX(68px);
+  }
+  70% {
+    transform: translateX(51px);
+  }
+
+  80% {
+    transform: translateX(34px);
+  }
+  90% {
+    transform: translateX(17px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes logText {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  70% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+
+  70% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

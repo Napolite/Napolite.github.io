@@ -1,16 +1,5 @@
-@font-face {
-  font-family: satisfy;
-  src: url("./assets/fonts/Satisfy-Regular.ttf");
-}
-
-@font-face {
-  font-family: manrope;
-  src: url("./assets/fonts/manrope-regular.otf");
-}
-
-@font-face {
-  font-family: suez;
-  src: url("./assets/fonts/SuezOne-Regular.ttf");
+.home {
+  animation: fadein 1s;
 }
 
 .root {
@@ -24,6 +13,7 @@
   width: 100%;
   justify-content: space-between;
   align-items: baseline;
+  margin-top: -10px;
 }
 .logo {
   height: 30px;
@@ -82,6 +72,7 @@
   font-family: suez;
   word-spacing: 10px;
   letter-spacing: 7px;
+  /* animation: fadein 1s; */
 }
 .expressionOf {
   font-family: satisfy;
@@ -110,17 +101,19 @@
   position: relative;
   top: 20px;
   left: 0%;
-  animation: shopcart 1s;
+  /* animation: shopcart 1s; */
 }
 
 .artworks {
   display: flex;
   width: 40%;
   max-height: 100%;
+  justify-content: space-between;
 }
 .socialcut {
   width: 100%;
   height: 100%;
+  margin-right: 10px;
 }
 
 .socialcut img {
@@ -129,26 +122,72 @@
 }
 
 .right-art {
+  /* justify-content: space-between; */
   margin-top: -30px;
   height: 100%;
 }
 .belchev {
   height: 57%;
   width: 100%;
+  margin-bottom: 7px;
 }
 .moran {
   height: 55%;
+  width: 100%;
 }
 
 @keyframes shopcart {
   0% {
     left: 50%;
+    transform: rotate(10deg);
   }
+
   50% {
     left: 50%;
+    transform: rotate(5deg);
   }
 
   100% {
     left: 0%;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
