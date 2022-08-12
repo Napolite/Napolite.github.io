@@ -1,5 +1,5 @@
 .landing-root {
-  animation: fadeOut 3s;
+  animation: fadeOut 2s;
 }
 
 .container {
@@ -15,7 +15,7 @@
   font-size: 70px;
   font-family: satisfy;
   letter-spacing: 8px;
-  animation: logText 0.5s;
+  animation: logText 1s;
 }
 
 .landing-logo {
@@ -36,44 +36,9 @@
   0% {
     transform: translateX(170px);
   }
-  5% {
-    transform: translateX(170px);
-  }
-  6% {
-    transform: translateX(170px);
-  }
-  7% {
-    transform: translateX(170px);
-  }
-  10% {
-    transform: translateX(153px);
-  }
+
   20% {
-    transform: translateX(136px);
-  }
-  30% {
-    transform: translateX(119px);
-  }
-
-  40% {
-    transform: rotateX(102px);
-  }
-  50% {
-    transform: translateX(85px);
-  }
-
-  60% {
-    transform: translateX(68px);
-  }
-  70% {
-    transform: translateX(51px);
-  }
-
-  80% {
-    transform: translateX(34px);
-  }
-  90% {
-    transform: translateX(17px);
+    transform: translateX(170px);
   }
 
   100% {
@@ -108,17 +73,13 @@
     opacity: 1;
   }
 
-  25% {
-    opacity: 1;
-  }
-
-  50% {
+  /* 50% {
     opacity: 0.75;
-  }
+  } */
 
-  70% {
+  /* 70% {
     opacity: 0.5;
-  }
+  } */
 
   100% {
     opacity: 0;

@@ -7,7 +7,7 @@ const App = () => {
   const [dispHome, setDispHome] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setDispHome(true), 3000);
+    setTimeout(() => setDispHome(true), 4500);
   });
   return (
     <div>

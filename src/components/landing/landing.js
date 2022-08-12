@@ -7,12 +7,14 @@ import { useEffect } from "react";
 
 const Landing = () => {
   const [displayText, setDisplayText] = useState(false);
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setDisplayText(true), 700);
+    setTimeout(() => setDisplayText(true), 1000);
+    setTimeout(() => setFade(true), 2500);
   });
   return (
-    <div className="landing-root">
+    <div className={fade ? "landing-root" : ""}>
       <div className="container">
         <img src={logo} className="landing-logo" />
         <p className={displayText ? "landing-logo-text" : "no-disp"}>rtsy</p>
